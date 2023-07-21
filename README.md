@@ -43,7 +43,6 @@ I managed to snap off the mount for the Arudino hence the glue, I will reprint t
 ## Mechanical Files
 
 Mech files are here: (https://github.com/bigcrimping/radiation_spinner/tree/main/mech_files)
-](https://github.com/bigcrimping/radiation_spinner/tree/main/mech_files)
 
 ![spinner_mech](https://github.com/bigcrimping/radiation_spinner/assets/74270551/c49b6037-15be-4ad4-bdb5-a103fe172eb5)
 
