@@ -1,3 +1,4 @@
+## Radiation Spinner
 A device which uses a Tevisio BG51 pin array to detect beta/gamma/X-ray and spin a OG-4 Dekatron device
 
 ![spinner](https://github.com/bigcrimping/radiation_spinner/assets/74270551/b44ac98d-5afe-45a5-93ec-de5034ae6524)
