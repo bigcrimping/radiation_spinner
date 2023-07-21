@@ -1,22 +1,25 @@
 ## Radiation Spinner
 A device which uses a Tevisio BG51 pin array to detect beta/gamma/X-ray and spin a OG-4 Dekatron device
 
-![spinner](https://github.com/bigcrimping/radiation_spinner/assets/74270551/b44ac98d-5afe-45a5-93ec-de5034ae6524)
+![spinner](https://github.com/bigcrimping/radiation_spinner/assets/74270551/6cd2b1d6-3d2b-48b6-a9dd-424c98da14b1)
+
 
 The smarts come in the form of a DS02 Dekatron Spinner Kit (modified to work from external source), an Arduino Nano 33 IOT and a Mikroe "Radiation Click" board hosting a Tevisio BG51 device.
 
 I chose to use a BG51 as it has a very linear response and is not as sensitive as most geiger tubes 
 
-![image](https://github.com/bigcrimping/radiation_spinner/assets/74270551/e763a807-191e-4c29-9d03-91b1c2490db9)
+
 
 
 The spinner will default to a 1 second per pulse when no radiation is detected
 
-![slow](https://github.com/bigcrimping/radiation_spinner/assets/74270551/6f718fd0-3819-4652-a3fd-c069c179e90d)
+![slow](https://github.com/bigcrimping/radiation_spinner/assets/74270551/92cdff82-da14-4fa1-b225-3fd0a5335002)
+
 
 When a particle is detected the Dekatron speeds up
 
-![fast](https://github.com/bigcrimping/radiation_spinner/assets/74270551/e29242dc-0c90-4c14-9930-2daeb708d7ac)
+![fast](https://github.com/bigcrimping/radiation_spinner/assets/74270551/5f095de3-22b6-4ea5-bcc9-3cc6ef00f49a)
+
 
 ## Project Code
 
@@ -32,8 +35,9 @@ Arduino pin 8 to Spinner input
 
 Inside the chassis it looks like the below
 
-![inside](https://github.com/bigcrimping/radiation_spinner/assets/74270551/25c5a5f2-7025-4397-a743-3b1341e81871)
+![inside](https://github.com/bigcrimping/radiation_spinner/assets/74270551/5cfe9ed6-7099-41d8-b1d4-1c2d837ac0ad)
 
+I managed to snap off the mount for the Arudino hence the glue, I will reprint the base part to fix this
 
 
 ## Mechanical Files
