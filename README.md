@@ -8,7 +8,7 @@ The smarts come in the form of a DS02 Dekatron Spinner Kit (modified to work fro
 
 I chose to use a BG51 as it has a very linear response and is not as sensitive as most geiger tubes 
 
-
+![graph](https://github.com/bigcrimping/radiation_spinner/assets/74270551/e4f8643e-5bfb-4f78-9582-3d21bd276a9c)
 
 
 The spinner will default to a 1 second per pulse when no radiation is detected
