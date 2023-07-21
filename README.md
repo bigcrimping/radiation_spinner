@@ -37,7 +37,7 @@ Inside the chassis it looks like the below
 
 ## Mechanical Files
 
-Mech files are here: [[![image](https://user-images.githubusercontent.com/74270551/180155837-8c465e86-1bfe-498d-afaa-9dbd630525f7.png)](https://github.com/bigcrimping/radiation_spinner/tree/main/mech_files)
+Mech files are here: (https://github.com/bigcrimping/radiation_spinner/tree/main/mech_files)
 ](https://github.com/bigcrimping/radiation_spinner/tree/main/mech_files)
 
 ![spinner_mech](https://github.com/bigcrimping/radiation_spinner/assets/74270551/a7e46a36-70cc-44df-832c-dd74ce6a6262)
