@@ -22,7 +22,6 @@ void setup() {
 void loop() {
   unsigned long timeNow;
   unsigned long timeSinceLastClick;
-  unsigned long locClickCount;
 
   perform_output(); // send the pulses to the Dekatron
 
@@ -40,11 +39,10 @@ void loop() {
     }    
     lastClickTime = timeNow;
   }
-  locClickCount = clickCount;
 
   interrupts();     // exit critical
 
-  delay(locClickCount);
+  delay(clickCount);
 }
 
 void increaseFrequency() { //Whenever a pulse is detected set the spin speed to maximum
