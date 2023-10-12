@@ -8,8 +8,8 @@ const int maxDelay = 1000;     // Minimum loop delay between pulses
 const int decay_value = 500;   // time in ms between decrements of speed
 
 // Variables
-unsigned long clickCount = minDelay;     // Number of clicks, set to fastest to start
-unsigned long lastClickTime = 0;         // Time of the last click
+volatile unsigned long clickCount = minDelay;     // Number of clicks, set to fastest to start
+volatile unsigned long lastClickTime = 0;         // Time of the last click
 
 void setup() {
   pinMode(inputPin, INPUT);
@@ -20,21 +20,31 @@ void setup() {
 }
 
 void loop() {
-  
-  perform_output(); //send the pulses to the Dekatron
-  
+  unsigned long timeNow;
+  unsigned long timeSinceLastClick;
+  unsigned long locClickCount;
+
+  perform_output(); // send the pulses to the Dekatron
+
+  timeNow = millis();
+
+  noInterrupts();   // critical section to protect globals
+
   // Calculate the time elapsed since the last click
-  unsigned long timeSinceLastClick = millis() - lastClickTime;
+  timeSinceLastClick = timeNow - lastClickTime;
   
   // Increment clickcount (to reduce spin speed) every decay_value of time elapse
   if (timeSinceLastClick >= decay_value) {
     if(clickCount < maxDelay) {
       clickCount = clickCount + 2;
-    }
-    
-    lastClickTime = millis();
+    }    
+    lastClickTime = timeNow;
   }
-  delay(clickCount);
+  locClickCount = clickCount;
+
+  interrupts();     // exit critical
+
+  delay(locClickCount);
 }
 
 void increaseFrequency() { //Whenever a pulse is detected set the spin speed to maximum
